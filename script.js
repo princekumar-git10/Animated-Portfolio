@@ -42,7 +42,10 @@ window.addEventListener("load", () => {
 document.addEventListener("DOMContentLoaded", () => {
   const menuBtn = document.querySelector(".menu");
   const menu = document.getElementById("menu");
+  // Select all links inside the menu
+  const menuLinks = document.querySelectorAll(".menu-overlay ul li a");
 
+  // --- TOGGLE MENU (Your original logic) ---
   menuBtn.addEventListener("click", () => {
     menu.classList.toggle("active");
 
@@ -51,6 +54,17 @@ document.addEventListener("DOMContentLoaded", () => {
     } else {
       menuBtn.innerHTML = "Menu ☰";
     }
+  });
+
+  // --- AUTO-CLOSE ON LINK CLICK (New logic) ---
+  menuLinks.forEach(link => {
+    link.addEventListener("click", () => {
+      // 1. Remove the active class to hide the menu
+      menu.classList.remove("active");
+
+      // 2. Reset the button text back to "Menu"
+      menuBtn.innerHTML = "Menu ☰";
+    });
   });
 });
 
