@@ -79,3 +79,63 @@ window.addEventListener('scroll', () => {
     }
   });
 });
+
+
+
+
+// ANIMATION FOR ABOUT ME SECTION
+window.addEventListener("load", () => {
+  // 1. Select the new elements from the About Section
+  const bgTitles = document.querySelectorAll(".bg-title-text"); // The giant "ABOUT ME"
+  const portrait = document.querySelector(".main-portrait");    // Your face image
+  const bioText = document.querySelector(".sub-text");         // The description
+  const pills = document.querySelectorAll(".pill");            // The tech tags
+
+  // --- Background Text Animation (Fade In + Spread) ---
+  bgTitles.forEach((title, i) => {
+    title.style.opacity = 0;
+    title.style.transform = "translateY(30px) scale(0.9)";
+    
+    setTimeout(() => {
+      title.style.transition = "1.2s cubic-bezier(0.2, 0.8, 0.2, 1)";
+      title.style.opacity = 1;
+      title.style.transform = "translateY(0) scale(1)";
+    }, 200 + (i * 200));
+  });
+
+  // --- Portrait Animation (Scale Up) ---
+  if(portrait) {
+    portrait.style.opacity = 0;
+    portrait.style.transform = "scale(0.8) translateY(20px)";
+
+    setTimeout(() => {
+      portrait.style.transition = "1.5s ease-out";
+      portrait.style.opacity = 1;
+      portrait.style.transform = "scale(1) translateY(0)";
+    }, 600);
+  }
+
+  // --- Bio Description Animation (Slide Up) ---
+  if(bioText) {
+    bioText.style.opacity = 0;
+    bioText.style.transform = "translateY(20px)";
+
+    setTimeout(() => {
+      bioText.style.transition = "1s ease";
+      bioText.style.opacity = 1;
+      bioText.style.transform = "translateY(0)";
+    }, 900);
+  }
+
+  // --- Tech Pills Animation (Staggered Load) ---
+  pills.forEach((pill, i) => {
+    pill.style.opacity = 0;
+    pill.style.transform = "translateY(15px)";
+
+    setTimeout(() => {
+      pill.style.transition = "0.6s ease";
+      pill.style.opacity = 1;
+      pill.style.transform = "translateY(0)";
+    }, 1100 + (i * 100));
+  });
+});

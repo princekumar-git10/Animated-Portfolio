@@ -1,0 +1,42 @@
+<section id="mix">
+        <br>
+        <section class="about">
+            <div class="about-container">
+
+                <div class="about-text">
+                    <h1>About Me</h1>
+
+                    <p class="intro">👋 Hey, I'm Prince Kumar</p>
+
+                    <div class="tags1">
+                        <span>💻 Developer</span>
+                        <span>⚡ Fast Learner</span>
+                        <span>🚀 Builder</span>
+                        <span>🧠 Problem Solver</span>
+                    </div>
+
+                    <p class="desc">
+                        Passionate about building modern web apps with clean UI,
+                        smooth animations and real-world impact.
+                        <br><br>
+                        A <span style="color: #ab58ff;">Full Stack Developer</span> with expertise in React, Node,
+                        MongoDB and AI. I love creating smart, user-friendly systems that solve real problems and look
+                        great doing it.
+                        <br><br>
+                        Also a fast learner and problem solver, I thrive on tackling new challenges and building
+                        innovative solutions on <span style="color: #ab58ff;">Leetcode</span>. Let's connect and create
+                        something amazing together!
+
+                    </p>
+                    <div class="btn">
+                        <a href="#new">Let’s Connect 🚀</a>
+                    </div>
+                </div>
+
+                <div class="about-img">
+                    <img src="img/Young man focused at workstation.png" alt="">
+                </div>
+
+            </div>
+        </section>
+    </section>

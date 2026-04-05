@@ -150,16 +150,15 @@ body {
   top: 80px;
   left: auto;
   right: 20px;
-  /* width: 300px; */
-  /* height: auto; */
   width: fit-content;
   min-width: 250px;
   padding: 40px;
 
   /* background: radial-gradient(circle at top, #111, #000); */
-  background: rgba(10, 10, 10, 0.85);
-  backdrop-filter: blur(25px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(122, 121, 121, 0.85);
+  box-shadow: white 0px 0px 10px;
+  backdrop-filter: blur(-2px);
+  border: 5px solid rgb(255, 255, 255);
   border-radius: 24px;
 
   display: flex;
@@ -232,7 +231,7 @@ body {
   font-weight: 600;
   letter-spacing: 2px;
   margin: 15px 0;
-
+  text-shadow: rgb(0, 0, 0) 0px 0px 3px;
   position: relative;
   display: inline-block;
 
@@ -246,7 +245,7 @@ body {
   position: absolute;
   left: 0;
   top: 0;
-
+  
   color: transparent;
   -webkit-text-stroke: 1px rgba(255, 255, 255, 0.3);
 }
@@ -255,7 +254,8 @@ body {
 .menu-overlay ul li a:hover {
   color: #a855f7;
   transform: scale(1.05);
-  text-shadow: 0 0 15px rgba(168, 85, 247, 0.5);
+  /* text-shadow: rgb(0, 0, 0) 0px 0px 3px; */
+  text-shadow: 0 0 5px rgba(168, 85, 247, 0.5);
 }
 
 /* ================= MENU BUTTON ================= */
@@ -694,6 +694,10 @@ canvas {
   background: radial-gradient(circle at top, #111, #000);
   padding: 100px 10%;
   color: white;
+}
+
+.Projects {
+  margin-bottom: 10%;
 }
 
 /* HEADING */
