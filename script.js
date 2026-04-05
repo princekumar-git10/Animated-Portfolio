@@ -139,3 +139,88 @@ window.addEventListener("load", () => {
     }, 1100 + (i * 100));
   });
 });
+
+
+// CONNECT SECTION ANIMATION ON LOAD
+window.addEventListener("load", () => {
+  const connectBg = document.querySelector(".title");
+  const contactCards = document.querySelectorAll(".cards-container");
+
+  // 1. Large background "CONNECT" text animation
+  setTimeout(() => {
+    connectBg.style.opacity = "1";
+    connectBg.style.transform = "translateY(0)";
+  }, 300);
+
+  // 2. Sequential "staggered" animation for the 4 cards
+  contactCards.forEach((card, i) => {
+    setTimeout(() => {
+      card.style.opacity = "1";
+      card.style.transform = "translateY(0) scale(1)";
+    }, 600 + (i * 150)); // Each card appears 150ms after the previous one
+  });
+});
+
+
+const animateProjects = () => {
+  const bgText = document.querySelector(".projects-outline");
+  const heroCard = document.querySelector(".hero-project-wrapper");
+  const mainTitle = document.querySelector(".project-title-main");
+  const thumbs = document.querySelectorAll(".thumb-card");
+  const pills = document.querySelectorAll(".pill");
+  const connectBtn = document.querySelector(".connect-btn");
+
+  // Safety check: if the main elements don't exist, stop the script
+  if (!bgText || !heroCard) return;
+
+  // 1. Background "PROJECTS"
+  setTimeout(() => {
+    bgText.style.opacity = "0.05"; 
+    bgText.style.transform = "translateY(0)";
+  }, 200);
+
+  // 2. Main Hero Project Card
+  setTimeout(() => {
+    heroCard.style.opacity = "1";
+    heroCard.style.transform = "scale(1) translateY(0)";
+  }, 500);
+
+  // 3. Main Project Title
+  setTimeout(() => {
+    if(mainTitle) {
+      mainTitle.style.opacity = "1";
+      mainTitle.style.transform = "translateY(0)";
+    }
+  }, 800);
+
+  // 4. Secondary Thumbnails (Staggered)
+  thumbs.forEach((thumb, i) => {
+    setTimeout(() => {
+      thumb.style.opacity = "0.5";
+      thumb.style.transform = "translateY(0)";
+    }, 1000 + i * 150);
+  });
+
+  // 5. Tech Stack Pills
+  pills.forEach((pill, i) => {
+    setTimeout(() => {
+      pill.style.opacity = "1";
+      pill.style.transform = "translateY(0)";
+    }, 1400 + i * 100);
+  });
+
+  // 6. Connect Button
+  setTimeout(() => {
+    if(connectBtn) {
+      connectBtn.style.opacity = "1";
+      connectBtn.style.transform = "scale(1)";
+    }
+  }, 1800);
+};
+
+// Run if already loaded, otherwise wait for load
+if (document.readyState === "complete") {
+  animateProjects();
+} else {
+  window.addEventListener("load", animateProjects);
+}
