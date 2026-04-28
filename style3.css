@@ -302,7 +302,7 @@ html {
 .projects-outline {
   font-size: 18vw; /* Scales with screen width */
   font-weight: 900;
-  color: rgba(255, 255, 255, 0.53); /* Very faint grey */
+  color: rgba(255, 255, 255, 0.84);
   margin: 0;
   letter-spacing: -2px;
 }
