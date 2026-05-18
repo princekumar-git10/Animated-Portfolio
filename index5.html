@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problems</title>
+    <link rel="stylesheet" href="style5.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <section id="home">
+
+        <!-- NAVBAR -->
+        <nav class="nav">
+            <div class="logo"><img src="img/Profile.jpeg" alt="Prince">Portfolio</div>
+            <div class="status">🟢 Available</div>
+            <div class="menu">
+                <span>Menu</span>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+
+        <!-- FULLSCREEN MENU -->
+        <div class="menu-overlay" id="menu">
+            <div class="menu-content">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index2.html">About</a></li>
+                    <li><a href="index3.html">Projects</a></li>
+                    <li><a href="index5.html" class="active" onclick="closeMenu()">C Problems</a></li>
+                    <li><a href="index4.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- HERO SECTION -->
+        <section class="hero">
+            <div class="hero-bg-text">PROBLEMS<br />SOLVED</div>
+            <div class="hero-content">
+                <div class="platform-tabs">
+                    <a class="tab active" onclick="switchTab(this, 'all')" href="c homework" style="background-color:rgb(66, 66, 66)">All</a>
+                    <button class="tab" onclick="switchTab(this, 'leetcode')">LeetCode</button>
+                    <button class="tab" onclick="switchTab(this, 'codeforces')">Codeforces</button>
+                    <button class="tab" onclick="switchTab(this, 'gfg')">GeeksForGeeks</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- STATS ROW -->
+        <section class="stats-row">
+            <div class="stat-card">
+                <span class="stat-num">340<span class="stat-plus">+</span></span>
+                <span class="stat-label">Total Problems</span>
+            </div>
+            <div class="stat-card accent-purple">
+                <span class="stat-num">210<span class="stat-plus">+</span></span>
+                <span class="stat-label">LeetCode</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-num">85<span class="stat-plus">+</span></span>
+                <span class="stat-label">Codeforces</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-num">45<span class="stat-plus">+</span></span>
+                <span class="stat-label">GFG</span>
+            </div>
+        </section>
+
+        <!-- DIFFICULTY BREAKDOWN -->
+        <section class="difficulty-section">
+            <div class="section-label">Difficulty Breakdown</div>
+            <div class="diff-bars">
+                <div class="diff-row">
+                    <span class="diff-name easy">Easy</span>
+                    <div class="bar-track">
+                        <div class="bar-fill" style="width: 65%; background: #22c55e;"></div>
+                    </div>
+                    <span class="diff-count">142</span>
+                </div>
+                <div class="diff-row">
+                    <span class="diff-name medium">Medium</span>
+                    <div class="bar-track">
+                        <div class="bar-fill" style="width: 40%; background: #f59e0b;"></div>
+                    </div>
+                    <span class="diff-count">130</span>
+                </div>
+                <div class="diff-row">
+                    <span class="diff-name hard">Hard</span>
+                    <div class="bar-track">
+                        <div class="bar-fill" style="width: 20%; background: #ef4444;"></div>
+                    </div>
+                    <span class="diff-count">68</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- TOPIC TAGS -->
+        <section class="topics-section">
+            <div class="section-label">Topics Mastered</div>
+            <div class="tags-grid">
+                <span class="topic-tag">🌳 Trees</span>
+                <span class="topic-tag">🔗 Linked Lists</span>
+                <span class="topic-tag">📊 Dynamic Programming</span>
+                <span class="topic-tag">🔍 Binary Search</span>
+                <span class="topic-tag">📈 Graphs</span>
+                <span class="topic-tag">🔢 Arrays</span>
+                <span class="topic-tag">📝 Strings</span>
+                <span class="topic-tag">🗂️ Stacks & Queues</span>
+                <span class="topic-tag">🧮 Math</span>
+                <span class="topic-tag">🔄 Recursion</span>
+                <span class="topic-tag">💡 Greedy</span>
+            </div>
+        </section>
+
+        <!-- RECENT SOLVES -->
+        <section class="recent-section">
+            <div class="section-label">Recent Solves</div>
+            <div class="problems-list" id="problemsList">
+
+                <div class="problem-card" data-platform="leetcode">
+                    <div class="problem-left">
+                        <span class="problem-platform lc">LC</span>
+                        <div>
+                            <div class="problem-title">Longest Substring Without Repeating Characters</div>
+                            <div class="problem-meta">Sliding Window · #3</div>
+                        </div>
+                    </div>
+                    <span class="diff-badge medium">Medium</span>
+                </div>
+
+                <div class="problem-card" data-platform="leetcode">
+                    <div class="problem-left">
+                        <span class="problem-platform lc">LC</span>
+                        <div>
+                            <div class="problem-title">Binary Tree Level Order Traversal</div>
+                            <div class="problem-meta">BFS · Trees · #102</div>
+                        </div>
+                    </div>
+                    <span class="diff-badge medium">Medium</span>
+                </div>
+
+                <div class="problem-card" data-platform="codeforces">
+                    <div class="problem-left">
+                        <span class="problem-platform cf">CF</span>
+                        <div>
+                            <div class="problem-title">Watermelon</div>
+                            <div class="problem-meta">Math · 800 Rating</div>
+                        </div>
+                    </div>
+                    <span class="diff-badge easy">Easy</span>
+                </div>
+
+                <div class="problem-card" data-platform="leetcode">
+                    <div class="problem-left">
+                        <span class="problem-platform lc">LC</span>
+                        <div>
+                            <div class="problem-title">Trapping Rain Water</div>
+                            <div class="problem-meta">Two Pointer · #42</div>
+                        </div>
+                    </div>
+                    <span class="diff-badge hard">Hard</span>
+                </div>
+
+                <div class="problem-card" data-platform="gfg">
+                    <div class="problem-left">
+                        <span class="problem-platform gfg">GFG</span>
+                        <div>
+                            <div class="problem-title">Detect Cycle in Directed Graph</div>
+                            <div class="problem-meta">Graphs · DFS</div>
+                        </div>
+                    </div>
+                    <span class="diff-badge medium">Medium</span>
+                </div>
+
+                <div class="problem-card" data-platform="leetcode">
+                    <div class="problem-left">
+                        <span class="problem-platform lc">LC</span>
+                        <div>
+                            <div class="problem-title">Word Break II</div>
+                            <div class="problem-meta">DP · Backtracking · #140</div>
+                        </div>
+                    </div>
+                    <span class="diff-badge hard">Hard</span>
+                </div>
+
+                <div class="problem-card" data-platform="codeforces">
+                    <div class="problem-left">
+                        <span class="problem-platform cf">CF</span>
+                        <div>
+                            <div class="problem-title">Next Round</div>
+                            <div class="problem-meta">Implementation · 900 Rating</div>
+                        </div>
+                    </div>
+                    <span class="diff-badge easy">Easy</span>
+                </div>
+
+                <div class="problem-card" data-platform="gfg">
+                    <div class="problem-left">
+                        <span class="problem-platform gfg">GFG</span>
+                        <div>
+                            <div class="problem-title">Merge K Sorted Linked Lists</div>
+                            <div class="problem-meta">Linked List · Heap</div>
+                        </div>
+                    </div>
+                    <span class="diff-badge hard">Hard</span>
+                </div>
+
+            </div>
+        </section>
+
+        <script src="script.js"></script>
+</body>
+
+</html>
