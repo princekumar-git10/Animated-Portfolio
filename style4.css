@@ -525,3 +525,8 @@ canvas {
   transform: translateY(30px) scale(0.9);
   transition: 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
+
+
+.nav {
+  background: rgb(58, 57, 57);
+}

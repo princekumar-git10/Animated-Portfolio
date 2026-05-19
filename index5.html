@@ -35,7 +35,7 @@
                     <li><a href="index.html">Home</a></li>
                     <li><a href="index2.html">About</a></li>
                     <li><a href="index3.html">Projects</a></li>
-                    <li><a href="index5.html" class="active" onclick="closeMenu()">C Problems</a></li>
+                    <li><a href="index5.html" class="active" onclick="closeMenu()">C language</a></li>
                     <li><a href="index4.html">Contact</a></li>
                 </ul>
             </div>
@@ -46,7 +46,8 @@
             <div class="hero-bg-text">PROBLEMS<br />SOLVED</div>
             <div class="hero-content">
                 <div class="platform-tabs">
-                    <a class="tab active" onclick="switchTab(this, 'all')" href="c homework" style="background-color:rgb(66, 66, 66)">All</a>
+                    <a class="tab active" onclick="switchTab(this, 'all')" href="c homework"
+                        style="background-color:rgb(66, 66, 66)">All</a>
                     <button class="tab" onclick="switchTab(this, 'leetcode')">LeetCode</button>
                     <button class="tab" onclick="switchTab(this, 'codeforces')">Codeforces</button>
                     <button class="tab" onclick="switchTab(this, 'gfg')">GeeksForGeeks</button>
@@ -57,19 +58,19 @@
         <!-- STATS ROW -->
         <section class="stats-row">
             <div class="stat-card">
-                <span class="stat-num">340<span class="stat-plus">+</span></span>
+                <span class="stat-num">64<span class="stat-plus">+</span></span>
                 <span class="stat-label">Total Problems</span>
             </div>
             <div class="stat-card accent-purple">
-                <span class="stat-num">210<span class="stat-plus">+</span></span>
+                <span class="stat-num">64<span class="stat-plus">+</span></span>
                 <span class="stat-label">LeetCode</span>
             </div>
             <div class="stat-card">
-                <span class="stat-num">85<span class="stat-plus">+</span></span>
+                <span class="stat-num">0<span class="stat-plus">+</span></span>
                 <span class="stat-label">Codeforces</span>
             </div>
             <div class="stat-card">
-                <span class="stat-num">45<span class="stat-plus">+</span></span>
+                <span class="stat-num">0<span class="stat-plus">+</span></span>
                 <span class="stat-label">GFG</span>
             </div>
         </section>
@@ -83,21 +84,21 @@
                     <div class="bar-track">
                         <div class="bar-fill" style="width: 65%; background: #22c55e;"></div>
                     </div>
-                    <span class="diff-count">142</span>
+                    <span class="diff-count">33</span>
                 </div>
                 <div class="diff-row">
                     <span class="diff-name medium">Medium</span>
                     <div class="bar-track">
                         <div class="bar-fill" style="width: 40%; background: #f59e0b;"></div>
                     </div>
-                    <span class="diff-count">130</span>
+                    <span class="diff-count">25</span>
                 </div>
                 <div class="diff-row">
                     <span class="diff-name hard">Hard</span>
                     <div class="bar-track">
                         <div class="bar-fill" style="width: 20%; background: #ef4444;"></div>
                     </div>
-                    <span class="diff-count">68</span>
+                    <span class="diff-count">6</span>
                 </div>
             </div>
         </section>
@@ -120,101 +121,148 @@
             </div>
         </section>
 
-        <!-- RECENT SOLVES -->
-        <section class="recent-section">
-            <div class="section-label">Recent Solves</div>
-            <div class="problems-list" id="problemsList">
-
-                <div class="problem-card" data-platform="leetcode">
-                    <div class="problem-left">
-                        <span class="problem-platform lc">LC</span>
-                        <div>
-                            <div class="problem-title">Longest Substring Without Repeating Characters</div>
-                            <div class="problem-meta">Sliding Window · #3</div>
-                        </div>
-                    </div>
-                    <span class="diff-badge medium">Medium</span>
+        <div class="problem-card" data-platform="leetcode">
+            <div class="problem-left">
+                <span class="problem-platform lc">LC</span>
+                <div>
+                    <div class="problem-title">Longest Palindromic Substring</div>
+                    <div class="problem-meta">String · #5</div>
                 </div>
-
-                <div class="problem-card" data-platform="leetcode">
-                    <div class="problem-left">
-                        <span class="problem-platform lc">LC</span>
-                        <div>
-                            <div class="problem-title">Binary Tree Level Order Traversal</div>
-                            <div class="problem-meta">BFS · Trees · #102</div>
-                        </div>
-                    </div>
-                    <span class="diff-badge medium">Medium</span>
-                </div>
-
-                <div class="problem-card" data-platform="codeforces">
-                    <div class="problem-left">
-                        <span class="problem-platform cf">CF</span>
-                        <div>
-                            <div class="problem-title">Watermelon</div>
-                            <div class="problem-meta">Math · 800 Rating</div>
-                        </div>
-                    </div>
-                    <span class="diff-badge easy">Easy</span>
-                </div>
-
-                <div class="problem-card" data-platform="leetcode">
-                    <div class="problem-left">
-                        <span class="problem-platform lc">LC</span>
-                        <div>
-                            <div class="problem-title">Trapping Rain Water</div>
-                            <div class="problem-meta">Two Pointer · #42</div>
-                        </div>
-                    </div>
-                    <span class="diff-badge hard">Hard</span>
-                </div>
-
-                <div class="problem-card" data-platform="gfg">
-                    <div class="problem-left">
-                        <span class="problem-platform gfg">GFG</span>
-                        <div>
-                            <div class="problem-title">Detect Cycle in Directed Graph</div>
-                            <div class="problem-meta">Graphs · DFS</div>
-                        </div>
-                    </div>
-                    <span class="diff-badge medium">Medium</span>
-                </div>
-
-                <div class="problem-card" data-platform="leetcode">
-                    <div class="problem-left">
-                        <span class="problem-platform lc">LC</span>
-                        <div>
-                            <div class="problem-title">Word Break II</div>
-                            <div class="problem-meta">DP · Backtracking · #140</div>
-                        </div>
-                    </div>
-                    <span class="diff-badge hard">Hard</span>
-                </div>
-
-                <div class="problem-card" data-platform="codeforces">
-                    <div class="problem-left">
-                        <span class="problem-platform cf">CF</span>
-                        <div>
-                            <div class="problem-title">Next Round</div>
-                            <div class="problem-meta">Implementation · 900 Rating</div>
-                        </div>
-                    </div>
-                    <span class="diff-badge easy">Easy</span>
-                </div>
-
-                <div class="problem-card" data-platform="gfg">
-                    <div class="problem-left">
-                        <span class="problem-platform gfg">GFG</span>
-                        <div>
-                            <div class="problem-title">Merge K Sorted Linked Lists</div>
-                            <div class="problem-meta">Linked List · Heap</div>
-                        </div>
-                    </div>
-                    <span class="diff-badge hard">Hard</span>
-                </div>
-
             </div>
-        </section>
+            <span class="diff-badge medium">Medium</span>
+        </div>
+
+        <div class="problem-card" data-platform="leetcode">
+            <div class="problem-left">
+                <span class="problem-platform lc">LC</span>
+                <div>
+                    <div class="problem-title">Remove Duplicates from Sorted Array</div>
+                    <div class="problem-meta">Array · #26</div>
+                </div>
+            </div>
+            <span class="diff-badge easy">Easy</span>
+        </div>
+
+        <div class="problem-card" data-platform="leetcode">
+            <div class="problem-left">
+                <span class="problem-platform lc">LC</span>
+                <div>
+                    <div class="problem-title">Add Binary</div>
+                    <div class="problem-meta">Math · #67</div>
+                </div>
+            </div>
+            <span class="diff-badge easy">Easy</span>
+        </div>
+
+        <div class="problem-card" data-platform="leetcode">
+            <div class="problem-left">
+                <span class="problem-platform lc">LC</span>
+                <div>
+                    <div class="problem-title">Single Number</div>
+                    <div class="problem-meta">Bit Manipulation · #136</div>
+                </div>
+            </div>
+            <span class="diff-badge easy">Easy</span>
+        </div>
+
+        <div class="problem-card" data-platform="leetcode">
+            <div class="problem-left">
+                <span class="problem-platform lc">LC</span>
+                <div>
+                    <div class="problem-title">Merge Sorted Array</div>
+                    <div class="problem-meta">Two Pointers · #88</div>
+                </div>
+            </div>
+            <span class="diff-badge easy">Easy</span>
+        </div>
+
+        <div class="problem-card" data-platform="leetcode">
+            <div class="problem-left">
+                <span class="problem-platform lc">LC</span>
+                <div>
+                    <div class="problem-title">Find the Index of the First Occurrence in a String</div>
+                    <div class="problem-meta">String · #28</div>
+                </div>
+            </div>
+            <span class="diff-badge easy">Easy</span>
+        </div>
+
+        <div class="problem-card" data-platform="leetcode">
+            <div class="problem-left">
+                <span class="problem-platform lc">LC</span>
+                <div>
+                    <div class="problem-title">Longest Common Prefix</div>
+                    <div class="problem-meta">String · #14</div>
+                </div>
+            </div>
+            <span class="diff-badge easy">Easy</span>
+        </div>
+
+        <div class="problem-card" data-platform="leetcode">
+            <div class="problem-left">
+                <span class="problem-platform lc">LC</span>
+                <div>
+                    <div class="problem-title">Excel Sheet Column Number</div>
+                    <div class="problem-meta">Math · #171</div>
+                </div>
+            </div>
+            <span class="diff-badge easy">Easy</span>
+        </div>
+
+        <div class="problem-card" data-platform="leetcode">
+            <div class="problem-left">
+                <span class="problem-platform lc">LC</span>
+                <div>
+                    <div class="problem-title">Longest Substring Without Repeating Characters</div>
+                    <div class="problem-meta">Sliding Window · #3</div>
+                </div>
+            </div>
+            <span class="diff-badge medium">Medium</span>
+        </div>
+
+        <div class="problem-card" data-platform="leetcode">
+            <div class="problem-left">
+                <span class="problem-platform lc">LC</span>
+                <div>
+                    <div class="problem-title">Lexicographically Smallest Generated String</div>
+                    <div class="problem-meta">Greedy · Strings</div>
+                </div>
+            </div>
+            <span class="diff-badge medium">Medium</span>
+        </div>
+
+        <div class="problem-card" data-platform="leetcode">
+            <div class="problem-left">
+                <span class="problem-platform lc">LC</span>
+                <div>
+                    <div class="problem-title">Check if Strings Can be Made Equal With Operations II</div>
+                    <div class="problem-meta">Strings · Hashing</div>
+                </div>
+            </div>
+            <span class="diff-badge medium">Medium</span>
+        </div>
+
+        <div class="problem-card" data-platform="leetcode">
+            <div class="problem-left">
+                <span class="problem-platform lc">LC</span>
+                <div>
+                    <div class="problem-title">Check if Strings Can be Made Equal With Operations I</div>
+                    <div class="problem-meta">Strings · Simulation</div>
+                </div>
+            </div>
+            <span class="diff-badge easy">Easy</span>
+        </div>
+
+        <div class="problem-card" data-platform="leetcode">
+            <div class="problem-left">
+                <span class="problem-platform lc">LC</span>
+                <div>
+                    <div class="problem-title">Find the String with LCP</div>
+                    <div class="problem-meta">String · Prefix Array</div>
+                </div>
+            </div>
+            <span class="diff-badge hard">Hard</span>
+        </div>
 
         <script src="script.js"></script>
 </body>
